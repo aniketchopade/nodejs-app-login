@@ -24,7 +24,7 @@ app.set('view engine', 'ejs'); // set up ejs for templating
 app.use(session({
     secret: "asdhaskdhaskjdh"
 }));
-
+console.log("i am here");
 app.use(passport.initialize());  /*sets  req.passport.user */ 
 app.use(passport.session()); /*calls passport.deserializeUser attch req.usr*/
 app.use(flash());
